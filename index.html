@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB222 Store</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light mb-4 navbar-custom">
+      <div class="container">
+        <a class="nav-link d-flex align-items-center nav-link-custom pl-0" href=".">
+          <img src="images/logo.jpg" alt="logo" style="width:30px;" />
+          <h4 class="my-0 ml-2" id="brand-name">Sweet O'Clock</h4>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link my-0" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <nav id="categories-nav" class="category-nav nav flex-column"></nav>
+        </div>
+        <div id="items-menu" class="col-lg-9">
+          <div id="items-container" class="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--popup modal-->
+    <div class="modal" id="product-view-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="container">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="modal-product-view-title" class="modal-title">Placeholder</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="heading d-flex justify-content-left align-items-left">
+                <div class="social-icons">
+                  <span>
+                    <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="contact.html" title="Contact Us"><i class="fa fa-envelope"></i></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="subscribe-form">
+                <form
+                  action="https://formspree.io/gndtt.sub@gmail.com"
+                  method="POST"
+                  class="form form-inline"
+                >
+                  <div class="input-group">
+                    <input
+                      id="subscribe-input"
+                      name="sub-user"
+                      class="form-control"
+                      type="email"
+                      placeholder="Email address"
+                      required
+                    />
+                    <div class="input-group-append">
+                      <input
+                        class="btn btn-primary btn-custom"
+                        value="Subscribe"
+                        type="submit"
+                        title="Subscribe to our newsletter"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <span class="text-muted"
+            >&#169; Sweet O'Clock - WEB222 Assignment 5 - 2020 - Images used in this assignment are
+            from https://unsplash.com/</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

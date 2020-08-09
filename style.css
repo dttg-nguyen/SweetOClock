@@ -1,0 +1,106 @@
+/*Add any CSS you need to this file.*/
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Berkshire+Swash:wght@400&display=swap');
+
+html body {
+  background-color: #f3e1e1;
+}
+
+#brand-name {
+  font-family: 'Berkshire Swash', cursive;
+}
+.navbar-custom,
+.modal-header {
+  background-color: #e19999;
+}
+
+.container {
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+#categories-nav {
+  background-color: #e19999;
+}
+
+#categories-nav .nav-link {
+  cursor: pointer;
+  display: block;
+  color: #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+#categories-nav .nav-link.active {
+  background-color: #8675a9;
+  color: black;
+}
+
+#categories-nav .nav-link:hover {
+  background-color: #8675a9;
+  color: #212529;
+}
+
+.nav-link-custom,
+.nav-link-custom:hover {
+  color: black;
+}
+
+/*--Image Cards--*/
+.card-body {
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+.badge.badge-info {
+  background-color: #8675a9;
+}
+.modal-body,
+.modal-footer {
+  background-color: #f3e1e1;
+}
+/*--Footer--*/
+.footer-bottom {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.footer-top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #e19999;
+  vertical-align: middle;
+}
+
+.footer-top a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  font-size: 1.5em;
+}
+
+.social-icons a:hover {
+  color: #7b64a8;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.btn-primary.btn-custom {
+  color: #fff;
+  background-color: #8675a9;
+  border-color: white;
+}
+
+.btn-primary.btn-custom:hover {
+  color: black;
+  background-color: #99d8d0;
+  border-color: white;
+}
