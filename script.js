@@ -176,7 +176,7 @@ var items = [
     title: 'Fruity Mousse Cake',
     desc: 'Hot - New Item',
     price: 'CAD 8',
-    src: 'images/cake/Fruity mousse.jpg',
+    src: 'images/cake/fruity_mousse.jpg',
     alt: '',
     intro: 'Fruity Mousse Cake is a light, elegant, flavorful dessert bursting of summer flavor.'
   },
@@ -197,7 +197,7 @@ var items = [
     title: 'Raspberry-Choco Cake',
     desc: 'Hot - New Item',
     price: 'CAD 35',
-    src: 'images/Cake/Rasberry_chocolate.jpg',
+    src: 'images/cake/raspberry_chocolate.jpg',
     alt: '',
     intro:
       'This Raspberry Chocolate Cake is super moist and layered with smooth chocolate ganache and raspberry filling, all covered in a fudgy chocolate frosting.'
@@ -219,7 +219,7 @@ var items = [
     title: 'New York Cheesecake',
     desc: "Store's signature",
     price: 'CAD 50',
-    src: 'images/cake/NY_cheesecake.jpg',
+    src: 'images/cake/newyork_cheesecake.jpg',
     alt: '',
     intro: 'A classic New York Cheesecake which is known for its rich, creamy, satiny texture.'
   },
@@ -262,7 +262,7 @@ var items = [
     title: 'Americano',
     desc: 'Hot coffees',
     price: 'CAD 3',
-    src: 'images/Coffee/americano.jpg',
+    src: 'images/coffee/americano.jpg',
     alt: '',
     intro:
       'A type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee.'
@@ -273,7 +273,7 @@ var items = [
     title: 'Caffe Latte',
     desc: 'Hot coffees',
     price: 'CAD 8',
-    src: 'images/Coffee/caffe_latte.jpg',
+    src: 'images/coffee/caffe_latte.jpg',
     alt: '',
     intro:
       'A coffee drink made with dark, rich espresso balanced with steamed milk and a light layer of foam.'
@@ -284,7 +284,7 @@ var items = [
     title: 'Iced Caffe Latte',
     desc: 'Cold Coffees',
     price: 'CAD 8',
-    src: 'images/Coffee/ice_caffelatte.jpg',
+    src: 'images/coffee/ice_caffelatte.jpg',
     alt: '',
     intro:
       'Dark, rich espresso combined with milk and served over ice. A perfect milk-forward cooldown for summer.'
@@ -295,7 +295,7 @@ var items = [
     title: 'Capuccino',
     desc: 'Hot coffees',
     price: 'CAD 5',
-    src: 'images/Coffee/capuccino.jpg',
+    src: 'images/coffee/capuccino.jpg',
     alt: '',
     intro:
       'Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam.'
@@ -306,7 +306,7 @@ var items = [
     title: 'Espresso',
     desc: 'Hot coffees',
     price: 'CAD 3',
-    src: 'images/Coffee/espresso.jpg',
+    src: 'images/coffee/espresso.jpg',
     alt: '',
     intro:
       'Small amount of nearly boiling water is forced under pressure through finely-ground coffee beans.'
@@ -317,7 +317,7 @@ var items = [
     title: 'Mocha',
     desc: 'Hot coffees',
     price: 'CAD 10',
-    src: 'images/Coffee/mocha_drink.jpg',
+    src: 'images/coffee/mocha_drink.jpg',
     alt: '',
     intro:
       'Rich espresso combined with bittersweet mocha sauce and steamed milk, topped with whipped cream.'
@@ -328,7 +328,7 @@ var items = [
     title: 'Chamomile Tea',
     desc: 'Hot - New Item',
     price: 'CAD 3',
-    src: 'images/Tea/camomile_tea.jpg',
+    src: 'images/tea/camomile_tea.jpg',
     alt: '',
     intro: 'A lovely cup of chamomile infused tea for a peaceful day.'
   },
@@ -338,7 +338,7 @@ var items = [
     title: 'Orange Tea',
     desc: 'Hot - New Item',
     price: 'CAD 5',
-    src: 'images/Tea/orange_tea.jpg',
+    src: 'images/tea/orange_tea.jpg',
     alt: '',
     intro: 'Store unique and fun tea for tea lovers.'
   },
@@ -348,7 +348,7 @@ var items = [
     title: 'Rose Tea',
     desc: 'Hot - New Item',
     price: 'CAD 6',
-    src: 'images/Tea/rose_tea.jpg',
+    src: 'images/tea/rose_tea.jpg',
     alt: '',
     intro: 'An aromatic herbal beverage made from the fragrant petals and buds of rose flowers.'
   },
@@ -358,7 +358,7 @@ var items = [
     title: 'Green Tea',
     desc: "Store's signature",
     price: 'CAD 3',
-    src: 'images/Tea/greentea.jpg',
+    src: 'images/tea/greentea.jpg',
     alt: '',
     intro: 'A cup of green tea that goes well with anything.'
   },
@@ -368,7 +368,7 @@ var items = [
     title: 'Herbal Tea',
     desc: "Store's signature",
     price: 'CAD 3',
-    src: 'images/Tea/herbal_tea.jpg',
+    src: 'images/tea/herbal_tea.jpg',
     alt: '',
     intro:
       'A cup of tea made from the infusion or decoction of herbs, spices, or other plant material in hot water.'
@@ -379,7 +379,7 @@ var items = [
     title: 'Honey Lemon Tea',
     desc: "Store's signature",
     price: 'CAD 5',
-    src: 'images/Tea/lemon_tea.jpg',
+    src: 'images/tea/lemon_tea.jpg',
     alt: '',
     intro: 'Warm your body and soothe your day with a cup of honey lemon tea!'
   }
