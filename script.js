@@ -261,7 +261,7 @@ var items = [
     title: 'Iced Caffe Latte',
     desc: 'Cold coffees',
     price: 'CAD 8',
-    src: 'images/Coffee/ice_caffelatte.jpg',
+    src: 'images/coffee/ice_caffelatte.jpg',
     alt: '',
     intro:
       'Dark, rich espresso combined with milk and served over ice. A perfect milk-forward cooldown for summer.'
