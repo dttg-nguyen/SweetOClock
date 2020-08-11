@@ -144,29 +144,6 @@ function itemCardOnclick() {
   $('#product-view-modal').modal('show');
 }
 
-/** Form **/
-function displayOrderNumberBox() {
-  var orderNumberBox = document.querySelector("#order-number-box");
-  orderNumberBox.required = true;
-  orderNumberBox.style.display = "block";
-}
-
-function hideOrderNumberBox() {
-  var orderNumberBox = document.querySelector("#order-number-box");
-  orderNumberBox.value = "";
-  orderNumberBox.required = false;
-  orderNumberBox.style.display = "none";
-}
-
-function onSubmit(e) {
-  var form = document.querySelector('#contact-form');
-  form.classList.add('was-validated');
-
-  if (!form.checkValidity()) {
-    e.preventDefault();
-  }
-}
-
 /** Data **/
 var categories = ['Cake', 'Tea', 'Coffee'];
 var items = [
@@ -282,9 +259,9 @@ var items = [
     id: '11',
     category: 'Coffee',
     title: 'Iced Caffe Latte',
-    desc: 'Cold Coffees',
+    desc: 'Cold coffees',
     price: 'CAD 8',
-    src: 'images/coffee/ice_caffelatte.jpg',
+    src: 'images/Coffee/ice_caffelatte.jpg',
     alt: '',
     intro:
       'Dark, rich espresso combined with milk and served over ice. A perfect milk-forward cooldown for summer.'

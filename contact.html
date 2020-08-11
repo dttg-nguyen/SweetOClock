@@ -1,179 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="contact.js"></script>
+  </head>
 
-<head>
-  <title>Contact Us</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light mb-4 navbar-custom">
+      <div class="container align-middle">
+        <a class="nav-link d-flex align-items-center nav-link-custom pl-0" href=".">
+          <img src="images/logo.jpg" alt="logo" style="width:30px;" />
+          <h4 class="my-0 ml-2" id="brand-name">Sweet O'Clock</h4>
+        </a>
+      </div>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-expand-sm navbar-light mb-4 navbar-custom">
-    <div class="container align-middle">
-      <a class="nav-link d-flex align-items-center nav-link-custom pl-0" href=".">
-        <img src="images/logo.jpg" alt="logo" style="width:30px;" />
-        <h4 class="my-0 ml-2" id="brand-name">Sweet O'Clock</h4>
-      </a>
-    </div>
-  </nav>
+    <!--FORM-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="contact-form">
+            <h5>Contact Form</h5>
+            <p class="text-muted mr-2">Please leave your message here.</p>
 
-  <!--FORM-->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="contact-form">
-          <h5>Contact Form</h5>
-          <p class="text-muted mr-2">Please leave your message here.</p>
-
-          <form class="form" action="https://httpbin.org/post" id="contact-form" method="POST"
-            onsubmit="onSubmit(event)" novalidate>
-            <div class="form-row">
-              <div class="col form-group">
-                <label class="form-label" for="firstname"><span class="text-danger">*</span>First Name</label>
-                <input class="form-control" type="text" id="firstname" name="firstname" autocomplete="given-name"
-                  required />
-                <div class="invalid-feedback">
-                  Please enter your first name
-                </div>
-              </div>
-
-              <div class="col form-group">
-                <label class="form-label" for="lastname"><span class="text-danger">*</span>Last Name</label>
-                <input class="form-control" type="text" id="lastname" name="lastname" autocomplete="family-name"
-                  required />
-                <div class="invalid-feedback">
-                  Please enter your last name
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="email"><span class="text-danger">*</span>Email Address</label>
-              <input class="form-control" type="email" id="email" name="email" required />
-              <div class="invalid-feedback">
-                Please enter a valid email
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="address"><span class="text-danger">*</span>Address</label>
-              <input class="form-control" type="text" id="address" name="address" autocomplete="street-address"
-                required />
-              <div class="invalid-feedback">
-                Please enter your address
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="col form-group">
-                <label class="form-label" for="city"><span class="text-danger">*</span>City</label>
-                <input class="form-control" id="city" name="city" list="cities" autocomplete="address-level2"
-                  required />
-                <div class="invalid-feedback">
-                  Please enter your city
-                </div>
-                <datalist id="cities">
-                  <option value="Yellowknife"> </option>
-                  <option value="Halifax"> </option>
-                  <option value="Belleville"> </option>
-                  <option value="Brampton"> </option>
-                  <option value="Etobicoke"> </option>
-                  <option value="Guelph"> </option>
-                  <option value="Hamilton"> </option>
-                  <option value="Kitchener"> </option>
-                  <option value="London"> </option>
-                  <option value="Mississauga"> </option>
-                  <option value="Niagara Falls"> </option>
-                  <option value="Niagara-on-the-Lake"> </option>
-                  <option value="North Bay"> </option>
-                  <option value="North York"> </option>
-                  <option value="Oakville"> </option>
-                  <option value="Oshawa"> </option>
-                  <option value="Ottawa"> </option>
-                  <option value="Scarborough"> </option>
-                  <option value="Simcoe"> </option>
-                  <option value="Stratford"> </option>
-                  <option value="Sudbury"> </option>
-                  <option value="Thunder Bay"> </option>
-                  <option value="Toronto"> </option>
-                  <option value="Waterloo"> </option>
-                  <option value="Windsor"> </option>
-                  <option value="Woodstock"> </option>
-                  <option value="Montreal"> </option>
-                  <option value="Montréal-Nord"> </option>
-                  <option value="Quebec"> </option>
-                  <option value="Regina"> </option>
-                  <option value="Saskatoon"> </option>
-                </datalist>
-              </div>
-              <div class="col form-group">
-                <label class="form-label" for="postalCode"><span class="text-danger">*</span>Postal Code</label>
-                <input class="form-control" type="text" id="postalCode" name="postalCode" autocomplete="postal-code"
-                  pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required />
-                <div class="invalid-feedback">
-                  Please enter a valid Canadian postal code
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label"><span class="text-danger">*</span>What is this about?</label>
-
-              <div class="form-check">
-                <label><input class="form-check-input" type="radio" name="option" value="question"
-                    onclick="hideOrderNumberBox()" />
-                  Question</label>
-              </div>
-              <div class="form-check">
-                <label><input class="form-check-input" type="radio" name="option" value="comment"
-                    onclick="hideOrderNumberBox()" />
-                  Comment</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" id="order-problem" type="radio" name="option" value="problem"
-                  onclick="displayOrderNumberBox()" required />
-                <label class="form-label" for="order-problem">Order Problem</label>
-                <div class="invalid-feedback">
-                  Please choose an option
-                </div>
-                <div>
-                  <input class="form-control" id="order-number-box" type="text" name="order-number-message"
-                    placeholder="Please enter order number..." style="display: none;" />
+            <form
+              class="form"
+              action="https://httpbin.org/post"
+              id="contact-form"
+              method="POST"
+              novalidate
+            >
+              <div class="form-row">
+                <div class="col form-group">
+                  <label class="form-label" for="firstname"
+                    ><span class="text-danger">*</span>First Name</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    autocomplete="given-name"
+                    required
+                  />
                   <div class="invalid-feedback">
-                    Please enter your order number
+                    Please enter your first name
+                  </div>
+                </div>
+
+                <div class="col form-group">
+                  <label class="form-label" for="lastname"
+                    ><span class="text-danger">*</span>Last Name</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    autocomplete="family-name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your last name
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label class="form-label" for="message"><span class="text-danger">*</span>Message</label>
-              <textarea class="form-control" id="message" name="message" required></textarea>
-              <div class="invalid-feedback">
-                Please type your message
+              <div class="form-group">
+                <label class="form-label" for="email"
+                  ><span class="text-danger">*</span>Email Address</label
+                >
+                <input class="form-control" type="email" id="email" name="email" required />
+                <div class="invalid-feedback">
+                  Please enter a valid email
+                </div>
               </div>
-            </div>
 
-            <input type="hidden" name="myname" value="Dong Thi Thuy Giang Nguyen" />
+              <div class="form-group">
+                <label class="form-label" for="address"
+                  ><span class="text-danger">*</span>Address</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  id="address"
+                  name="address"
+                  autocomplete="street-address"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter your address
+                </div>
+              </div>
 
-            <div class="form-group">
-              <input type="submit" value="Submit" class="btn btn-primary btn-custom">
-            </div>
-          </form>
+              <div class="form-row">
+                <div class="col form-group">
+                  <label class="form-label" for="city"
+                    ><span class="text-danger">*</span>City</label
+                  >
+                  <input
+                    class="form-control"
+                    id="city"
+                    name="city"
+                    list="cities"
+                    autocomplete="address-level2"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your city
+                  </div>
+                  <datalist id="cities">
+                    <option value="Toronto"> </option>
+                    <option value="Vancouver"> </option>
+                    <option value="Quebec"> </option>
+                    <option value="Montreal"> </option>
+                    <option value="Calgary"> </option>
+                    <option value="Ottawa"> </option>
+                    <option value="Edmonton"> </option>
+                  </datalist>
+                </div>
+                <div class="col form-group">
+                  <label class="form-label" for="postalCode"
+                    ><span class="text-danger">*</span>Postal Code</label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="postalCode"
+                    name="postalCode"
+                    autocomplete="postal-code"
+                    pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid Canadian postal code
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"
+                  ><span class="text-danger">*</span>What is this about?</label
+                >
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    id="question"
+                    type="radio"
+                    name="option"
+                    value="question"
+                  />
+                  <label class="form-label" for="question">Question</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    id="comment"
+                    type="radio"
+                    name="option"
+                    value="comment"
+                  />
+                  <label class="form-label" for="comment">Comment</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    id="order-problem"
+                    type="radio"
+                    name="option"
+                    value="problem"
+                    required
+                  />
+                  <label class="form-label" for="order-problem">Order Problem</label>
+                  <div class="invalid-feedback">
+                    Please choose an option
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      id="order-number-box"
+                      type="text"
+                      name="order-number-message"
+                      placeholder="Please enter order number..."
+                      style="display: none;"
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your order number
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message"
+                  ><span class="text-danger">*</span>Message</label
+                >
+                <textarea class="form-control" id="message" name="message" required></textarea>
+                <div class="invalid-feedback">
+                  Please type your message
+                </div>
+              </div>
+
+              <input type="hidden" name="myname" value="Dong Thi Thuy Giang Nguyen" />
+
+              <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary btn-custom" />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -196,13 +259,27 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="subscribe-form">
-                <form action="https://formspree.io/gndtt.sub@gmail.com" method="POST" class="form form-inline">
+                <form
+                  action="https://formspree.io/gndtt.sub@gmail.com"
+                  method="POST"
+                  class="form form-inline"
+                >
                   <div class="input-group">
-                    <input class="form-control" id="subscribe-input" name="sub-user" type="email"
-                      placeholder="Email address" required />
+                    <input
+                      class="form-control"
+                      id="subscribe-input"
+                      name="sub-user"
+                      type="email"
+                      placeholder="Email address"
+                      required
+                    />
                     <div class="input-group-append">
-                      <input class="btn btn-primary btn-custom" value="Subscribe" type="submit"
-                        title="Subscribe to our news letter" />
+                      <input
+                        class="btn btn-primary btn-custom"
+                        value="Subscribe"
+                        type="submit"
+                        title="Subscribe to our news letter"
+                      />
                     </div>
                   </div>
                 </form>
@@ -213,12 +290,12 @@
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <span class="text-muted">&#169; Sweet O'Clock - WEB222 Assignment 5 - 2020 - Images used in this assignment
-            are
-            from https://unsplash.com/</span>
+          <span class="text-muted"
+            >&#169; Sweet O'Clock - WEB222 Assignment 5 - 2020 - Images used in this assignment are
+            from https://unsplash.com/</span
+          >
         </div>
       </div>
     </footer>
-</body>
-
+  </body>
 </html>
